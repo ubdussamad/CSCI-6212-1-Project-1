@@ -31,7 +31,7 @@ To run the code, follow these steps:
    ./lex
    ``` 
 
-# Expected Output (for MY machine)
+# Expected Output (for my machine)
 The program will output the average time taken for each input size in nanoseconds. The output will look something like this:
 ```
 samad@apollo:~/arora$ gcc -O2 -std=c11 Proj-1.c -o lex -lm && ./lex
