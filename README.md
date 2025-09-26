@@ -11,7 +11,8 @@ The code is written in C and performs the following tasks:
 6. It calculates the mean and median time taken for each input size and prints the results to the console.
 7. It defines a function run_once that runs the actual algorithm given in the problem statement and computers how long it took to run it for a given input size n.
 
-
+Line #(33)[https://github.com/ubdussamad/CSCI-6212-1-Project-1/blob/97ab3b912038b1b4ba6bdb88a4fc7d766d6edfe2/Proj-1.c#L33-L41] is the man algorithm that we're profiling which is inside a function for better code readability.
+LKine #(64)[https://github.com/ubdussamad/CSCI-6212-1-Project-1/blob/97ab3b912038b1b4ba6bdb88a4fc7d766d6edfe2/Proj-1.c#L64] runs this funtion a thousand times.
 # Running the Code
 To run the code, follow these steps:
 1. Clone the repository to your local machine.
