@@ -35,19 +35,20 @@ To run the code, follow these steps:
 The program will output the average time taken for each input size in nanoseconds. The output will look something like this:
 ```
 samad@apollo:~/arora$ gcc -O2 -std=c11 Proj-1.c -o lex -lm && ./lex
-n=10         theoretical=8       mean=87 ns ,    mean/theoretical=10.79  median=86 ns median/theoretical=10.67
-n=100        theoretical=19      mean=271 ns ,   mean/theoretical=14.49  median=269 ns median/theoretical=14.37
-n=1000       theoretical=58      mean=1161 ns ,          mean/theoretical=20.06  median=1177 ns median/theoretical=20.33
-n=10000      theoretical=202     mean=3701 ns ,          mean/theoretical=18.36  median=2588 ns median/theoretical=12.84
-n=100000     theoretical=749     mean=10360 ns ,         mean/theoretical=13.84  median=9044 ns median/theoretical=12.08
-n=1000000    theoretical=2895    mean=42400 ns ,         mean/theoretical=14.64  median=42374 ns median/theoretical=14.64
-n=10000000   theoretical=11519   mean=200967 ns ,        mean/theoretical=17.45  median=200717 ns median/theoretical=17.42
-n=100000000  theoretical=46783   mean=671909 ns ,        mean/theoretical=14.36  median=638936 ns median/theoretical=13.66
-n=1000000000 theoretical=193020          mean=2985157 ns ,       mean/theoretical=15.47  median=2983662 ns median/theoretical=15.46
+n=10         theoretical=5       mean=30 ns ,    mean/theoretical=6.51  median=30 ns median/theoretical=6.46
+n=100        theoretical=22      mean=97 ns ,    mean/theoretical=4.49  median=97 ns median/theoretical=4.50
+n=1000       theoretical=100     mean=401 ns ,   mean/theoretical=4.01  median=409 ns median/theoretical=4.09
+n=10000      theoretical=464     mean=1911 ns ,          mean/theoretical=4.12  median=1913 ns median/theoretical=4.12
+n=100000     theoretical=2154    mean=9001 ns ,          mean/theoretical=4.18  median=9037 ns median/theoretical=4.19
+n=1000000    theoretical=10000   mean=42463 ns ,         mean/theoretical=4.25  median=42440 ns median/theoretical=4.24
+n=10000000   theoretical=46416   mean=201050 ns ,        mean/theoretical=4.33  median=200714 ns median/theoretical=4.32
+n=100000000  theoretical=215443          mean=806728 ns ,        mean/theoretical=3.74  median=943892 ns median/theoretical=4.38
+n=1000000000 theoretical=1000000         mean=2986487 ns ,       mean/theoretical=2.99  median=2983590 ns median/theoretical=2.98
+Sum=705610576130502000
 ```
 
 # Graph
-<img width="1000" height="600" alt="theoretical_vs_mean_median" src="https://github.com/user-attachments/assets/f566bef0-4253-4a63-bbc7-1eeda283942a" />
+<img width="1000" height="600" alt="theoretical_vs_mean_median" src="https://github.com/user-attachments/assets/ac4b865c-0357-42fb-bec5-f406e4f18620" />
 
 
 # Machine Specifications
