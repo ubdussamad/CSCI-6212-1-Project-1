@@ -13,7 +13,7 @@
 #include <string.h>
 
 #define _N_ 10000000000L // maximum n to test
-#define RUNS 1000.       // number of times to run algo for each n
+#define RUNS 1000        // number of times to run algo for each n
 volatile uint64_t Sum;  // volatile keeps work from being optimized out
 
 // Function to compute difference in nanoseconds between two timespecs
@@ -37,7 +37,7 @@ static inline int64_t run_once(int n){
             Sum += (uint64_t)k;
             k += (int)step;
         }
-        j <<= 1; // bit shift left is equivalent to j *= 2 (faster than power function)
+        j = 2 * j;
     }
 
     clock_gettime(CLOCK_MONOTONIC_RAW, &t1);
@@ -71,7 +71,7 @@ int main(void){
         double median_ns = (RUNS & 1) ? (double)tmp[RUNS/2] : (tmp[RUNS/2-1] + tmp[RUNS/2]) / 2.0;
 
 
-        double theoretical = ( (  4* pow(n , (2.0/3.0) )) / log(n)   );
+        double theoretical = ( (  pow(n , (2.0/3.0) ))   );
         printf(
             "n=%-10ld theoretical=%.0f \t mean=%.0f ns , \t mean/theoretical=%.2f  median=%.0f ns median/theoretical=%.2f\n",
             n,
