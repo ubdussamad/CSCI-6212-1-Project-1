@@ -11,8 +11,8 @@ The code is written in C and performs the following tasks:
 6. It calculates the mean and median time taken for each input size and prints the results to the console.
 7. It defines a function run_once that runs the actual algorithm given in the problem statement and computers how long it took to run it for a given input size n.
 
- The section below is the man algorithm that we're profiling which is inside a function for better code readability.
- https://github.com/ubdussamad/CSCI-6212-1-Project-1/blob/97ab3b912038b1b4ba6bdb88a4fc7d766d6edfe2/Proj-1.c#L33-L41
+The section below is the man algorithm that we're profiling which is inside a function for better code readability.
+https://github.com/ubdussamad/CSCI-6212-1-Project-1/blob/60ea0543ca8c180cf69de162e00fd0822a08ff7e/Proj-1.c#L34-L41
 
 The section below runs the function above a thosand times for each value of n. https://github.com/ubdussamad/CSCI-6212-1-Project-1/blob/97ab3b912038b1b4ba6bdb88a4fc7d766d6edfe2/Proj-1.c#L64
 
